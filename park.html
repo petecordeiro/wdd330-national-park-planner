@@ -1,56 +1,62 @@
 <!doctype html>
 <html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Find park information, photos, and the official National Park Service website for your next visit.">
-    <meta name="theme-color" content="#1F4D3A">
-    <title>Park Details | National Park Visit Planner</title>
-    <link rel="icon" href="images/park-icon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="css/style.css">
-    <script type="module" src="js/park.js"></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="index.html">
-          <svg class="brand-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="m6 40 17-26 13 20 8-12 14 22H6Z"/>
-            <path d="m17 23 6 5 5-6M34 46c19 2-17 8-3 13"/>
-          </svg>
-          <span>National Park<span class="brand-subtitle">Visit Planner</span></span>
-        </a>
-        <nav aria-label="Main navigation"><a href="index.html">Explore parks</a></nav>
-      </div>
-    </header>
 
-    <main id="main" class="container detail-main">
-      <a id="back-link" class="back-link" href="index.html">Back to parks</a>
-      <h1 id="park-title">Park details</h1>
-      <p id="status" class="status" role="status">Loading park…</p>
-      <button id="retry" class="button button-secondary" type="button" hidden>Try again</button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Find park information, photos, and the official National Park Service website for your next visit.">
+  <meta name="theme-color" content="#1F4D3A">
+  <title>Park Details | National Park Visit Planner</title>
+  <link rel="icon" href="images/park-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/park.js"></script>
+</head>
 
-      <article id="park-details" hidden>
-        <p id="park-states" class="park-states detail-states"></p>
-        <figure id="park-figure" class="park-figure" hidden>
-          <img id="park-image" alt="" width="1200" height="675" decoding="async" fetchpriority="high">
-          <figcaption id="photo-credit"></figcaption>
-        </figure>
-        <section class="about-park" aria-labelledby="about-title">
-          <h2 id="about-title">About this park</h2>
-          <p id="park-description"></p>
-          <a id="official-link" class="button">Official park website</a>
-        </section>
-      </article>
-      <noscript><p>Enable JavaScript to load this park's information.</p></noscript>
-    </main>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <svg class="brand-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="m6 40 17-26 13 20 8-12 14 22H6Z" />
+          <path d="m17 23 6 5 5-6M34 46c19 2-17 8-3 13" />
+        </svg>
+        <span>National Park<span class="brand-subtitle">Visit Planner</span></span>
+      </a>
+      <nav aria-label="Main navigation"><a href="index.html">Explore parks</a></nav>
+    </div>
+  </header>
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>National Park Visit Planner · Peterson Cordeiro</p>
-        <p>Park information and photos from the <a href="https://www.nps.gov/">National Park Service</a>.</p>
-      </div>
-    </footer>
-  </body>
+  <main id="main" class="container detail-main">
+    <a id="back-link" class="back-link" href="index.html">Back to parks</a>
+    <h1 id="park-title">Park details</h1>
+    <p id="status" class="status" role="status">Loading park…</p>
+    <button id="retry" class="button button-secondary" type="button" hidden>Try again</button>
+
+    <article id="park-details" hidden>
+      <p id="park-states" class="park-states detail-states"></p>
+      <figure id="park-figure" class="park-figure" hidden>
+        <img id="park-image" alt="" width="1200" height="675" decoding="async" fetchpriority="high">
+        <figcaption id="photo-credit"></figcaption>
+      </figure>
+      <section class="about-park" aria-labelledby="about-title">
+        <h2 id="about-title">About this park</h2>
+        <p id="park-description"></p>
+        <a id="official-link" class="button">Official park website</a>
+      </section>
+    </article>
+    <noscript>
+      <p>Enable JavaScript to load this park's information.</p>
+    </noscript>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>National Park Visit Planner · Peterson Cordeiro</p>
+      <p>Park information and photos from the <a href="https://www.nps.gov/">National Park Service</a>.</p>
+    </div>
+  </footer>
+</body>
+
 </html>
