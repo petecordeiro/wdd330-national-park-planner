@@ -1,0 +1,20 @@
+{
+  "name": "national-park-visit-planner",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A WDD 330 personal project built with HTML, CSS, and vanilla JavaScript.",
+  "engines": {
+    "node": ">=22.16.0"
+  },
+  "scripts": {
+    "build": "node --env-file-if-exists=.env scripts/build.mjs",
+    "dev": "npm run build && python3 -m http.server 5173 --bind 127.0.0.1 --directory build",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.15.0",
+    "globals": "^17.14.0"
+  }
+}
